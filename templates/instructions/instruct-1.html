@@ -1,0 +1,61 @@
+<div id="container-instructions">
+
+	<h1>Instructions</h1>
+
+	<hr>
+
+	<div class="instructions well">
+
+	    <p>
+		    On the following screen you will be asked to watch a short video.
+	    </p>
+
+	    <p>
+	    	Your task is to count how many times the players wearing <b id="dotColor"></b> pass the basketball.
+        </p>
+
+        <p>
+        	You will be asked to report the correct number of passes at the end of the video. If there are ads at the end of the video, please ignore them.
+        </p>
+
+				<p>
+        	Please pay attention, you will only be able to see the video once and are unable to pause or rewind.
+        </p>
+
+				<p>
+					If you report the correct number of passes you will receive an additional <b>bonus of $0.20!</b>.
+				</p>
+
+				<script type="text/javascript">
+        //console.log(psiTurk.getInstructionIndicator())
+				var color;
+				if (cond[0]) {
+					color = "white";
+				} else {
+					color = "black";
+				}
+
+				$("#dotColor").html(color);
+        </script>
+
+	</div>
+
+	<hr>
+
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            	<!-- no previous button on first screen -->
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                Next <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
